@@ -1,0 +1,195 @@
+/* =============================================================
+
+	Vijay Rudraraju
+	http://aussieweb.net.au
+
+	Built using Kraken boilerplate by Chris Ferdinandi - http://gomakethings.com
+
+ * ============================================================= */
+
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+// CONFIGURATION SETTINGS
+// Adjust colors, font stacks, breakpoints and sizing.
+
+// Colors
+$color-primary: #ed4d64; // was cd4f44 
+$color-black: #272727;
+$color-white: #ffffff;
+
+$color-success: #377f31; // Green
+$color-danger: #880e14; // Red
+$color-warning: #dba909; // Yellow
+$color-code: #dd1144;
+
+$color-gray-dark: #808080;
+$color-gray-light: #e5e5e5;
+
+
+// Font Stacks
+$font-primary: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-secondary: Georgia, Times, serif;
+$font-monospace: Menlo, Monaco, "Courier New", monospace;
+$font-headings: "Shadows Into Light", cursive;
+
+
+// Breakpoints
+$bp-xsmall: 20em;
+$bp-small: 30em;
+$bp-medium: 40em;
+$bp-large: 60em;
+$bp-xlarge: 80em;
+
+
+// Sizing
+$font-base: 125%;
+$font-weight: 300;
+$spacing: 1.5625em;
+$container-max: 80em;
+$grid-margins: 1.4%;
+
+@import
+	"components/mixins",
+	"components/reset",
+	"components/grid",
+	"components/typography",
+	//"components/code",
+	"components/buttons",
+	"components/forms",
+	"components/icons",
+	// "Import add-ons here...",
+	"components/overrides",
+	"components/print";
+
+
+/*  Client specifics */
+
+header {
+	margin: .5em 0 1em 0;
+}
+
+h1, h2, h3, h4, nav, .anniversary {
+  font-family: $font-headings;
+  text-shadow: .5px 0px 0px #999;
+}
+
+h1, h2, h3, a, nav {
+    color: $color-primary;
+}
+
+h1 span, h2 span, h3 span, h4 span {
+	font-size: .75em;
+	color: #666666;
+}
+
+h1.logo {
+	padding:0;
+	margin: .5em 0;
+}
+
+h1.logo span {
+	color: $color-gray-dark;
+	display: block;
+	margin-left: 1.5em;
+}
+
+h1.logo a {
+	color: #01b0f0;
+}
+
+h1.logo a:hover {
+	text-decoration: none;
+}
+
+h1 .icon-dental {
+	color: $color-gray-dark;
+	vertical-align: middle;
+}
+
+nav .nav {
+	font-size: 1.25em;
+	line-height: 2;
+}
+
+.nav {
+	list-style: none;
+	margin:0;
+	padding:0;
+
+}
+
+.nav li {
+	display: inline-block;
+	margin-right: .25em;
+
+}
+
+.nav a:hover {
+	text-decoration: none;
+}
+
+article {
+	border-top: 1px solid #fff1e5;
+	border-bottom: 1px solid #fffaf6;
+}
+
+article#intro {
+	border-top: none;	
+}
+
+#intro h2 {
+	padding-top: 0;
+}
+
+footer {
+	border-top: 1px solid #ffe7d4;
+
+}
+
+.badge {
+	color: #01b0f0;
+}
+
+small {
+	font-size: .75em;
+}
+
+.muted {
+	color: $color-gray-dark;
+}
+
+
+.btn {
+	min-width: 260px;
+}
+table     { width:100%; background-color:#fffaf6; color:#333;}
+table th  { padding:.25em .5em; font-weight:bold; text-align: left; color:#d8756c;}
+table td  { padding:.125em .5em;  }
+table th, 
+table td  { max-width: 3em;}
+table tr.odd {background-color: #fff;}
+
+@media (min-width: $bp-medium) {
+	
+
+	#main-nav {
+		line-height: 5;
+	}
+	nav .nav {
+		text-align: right;
+	}
+	.nav li {
+		margin-right: .5em;
+	}
+}
+
+@media (min-width: $bp-large) {
+	h1.logo span {
+		display: inline;
+		margin-left: 0;
+	}
+
+	nav .nav {
+		font-size: 1.5em;
+	}
+}	
