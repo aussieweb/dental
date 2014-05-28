@@ -67,7 +67,15 @@ $grid-margins: 1.4%;
 img, .btn {
 	box-shadow: 0 .05em .225em rgba(0, 0, 0, 0.2);
 	border-radius: 0.25em;
+}
+
+.noshadow {
+	box-shadow: none;
 } 
+
+.no-border-radius {
+	border-radius: none;
+}
 
 header {
 	margin: .5em 0 1em 0;
