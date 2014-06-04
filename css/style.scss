@@ -36,7 +36,7 @@ $font-headings: "Shadows Into Light", cursive;
 // Breakpoints
 $bp-xsmall: 20em;
 $bp-small: 30em;
-$bp-medium: 40em;
+$bp-medium: 50em;
 $bp-large: 60em;
 $bp-xlarge: 80em;
 
@@ -70,7 +70,7 @@ img, .btn {
 }
 
 header {
-	margin: .5em 0 1em 0;
+	margin: 1em 0 2em 0;
 }
 
 h1, h2, h3, h4, nav, .anniversary {
@@ -113,7 +113,7 @@ h1 .icon-dental {
 
 nav .nav {
 	font-size: 1.25em;
-	line-height: 4;
+	line-height: 5;
 }
 
 .nav {
