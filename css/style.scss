@@ -112,7 +112,7 @@ h1 .icon-dental {
 }
 
 nav .nav {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	line-height: 3;
 	margin-top: 1em;
 }
@@ -178,11 +178,10 @@ table tr.odd {background-color: #fff;}
 @media (min-width: $bp-medium) {
 	
 
-	#main-nav {
-		line-height: 3;
-	}
 	nav .nav {
 		text-align: right;
+		font-size: 1.5em;
+		line-height: 3;
 	}
 	.nav li {
 		margin-right: .5em;
