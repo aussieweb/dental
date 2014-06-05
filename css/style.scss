@@ -90,6 +90,7 @@ h1 span, h2 span, h3 span, h4 span {
 h1.logo {
 	padding:0;
 	margin: .5em 0;
+	font-size: 2em;
 }
 
 h1.logo span {
@@ -177,7 +178,9 @@ table tr.odd {background-color: #fff;}
 
 @media (min-width: $bp-medium) {
 	
-
+	h1.logo {
+		font-size: 3em;
+	}
 	nav .nav {
 		text-align: right;
 		font-size: 1.5em;
@@ -189,14 +192,6 @@ table tr.odd {background-color: #fff;}
 }
 
 @media (min-width: $bp-large) {
-	h1.logo span {
-		display: inline;
-		margin-left: 0;
-	}
-	h1.logo.manorlakes span {
-		display: block;
-		margin-left: 1.5em;
-	}
 	nav .nav {
 		font-size: 1.5em;
 	}
