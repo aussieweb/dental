@@ -204,7 +204,7 @@ table tr.odd {background-color: #fff;}
 }
 
 .btn-readmore {
-	background-color: $color-gray-light;
+	background-color: #ffffff;
 	border-color: darken( $color-gray-light, 15% );
 	color: $color-gray-dark;
 }
@@ -216,6 +216,6 @@ table tr.odd {background-color: #fff;}
 .btn-readmore:hover,
 a .btn-readmore:hover,
 .btn-readmore.active {
-	background-color: darken( $color-gray-light, 15% );
+	background-color: $color-gray-light;
 	border-color: darken( $color-gray-light, 15% );
 }
