@@ -208,6 +208,10 @@ table tr.odd {background-color: #fff;}
 	border-color: $color-success;
 }
 
+.btn.btn-tertiary {
+	min-width: auto;
+}
+
 .btn-tertiary:hover,
 a .btn-tertiary:hover,
 .btn-tertiary.active {
