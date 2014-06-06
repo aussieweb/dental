@@ -203,18 +203,18 @@ table tr.odd {background-color: #fff;}
 	text-decoration: underline;
 }
 
-.btn-tertiary {
-	background-color: $color-success;
-	border-color: $color-success;
+.btn-readmore {
+	background-color: $color-gray-light;
+	border-color: $color-gray-dark;
 }
 
-.btn.btn-tertiary {
+.btn.btn-readmore {
 	min-width: auto;
 }
 
-.btn-tertiary:hover,
-a .btn-tertiary:hover,
-.btn-tertiary.active {
-	background-color: darken( $color-success, 15% );
-	border-color: darken( $color-success, 15% );
+.btn-readmore:hover,
+a .btn-readmore:hover,
+.btn-readmore.active {
+	background-color: darken( $color-gray-light, 15% );
+	border-color: darken( $color-gray-dark, 15% );
 }
