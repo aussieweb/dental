@@ -205,8 +205,9 @@ table tr.odd {background-color: #fff;}
 
 .btn-readmore {
 	background-color: #ffffff;
-	border-color: darken( $color-gray-light, 15% );
+	border-color: #eee;
 	color: $color-gray-dark;
+	font-weight: 300;
 }
 
 .btn-readmore {
