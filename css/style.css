@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 /* =============================================================
 
 	Vijay Rudraraju
@@ -6,7 +7,6 @@
 	Built using Kraken boilerplate by Chris Ferdinandi - http://gomakethings.com
 
  * ============================================================= */
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 /* =============================================================
 	CSS RESET
 	Meyer's CSS Reset, Normalized.css, and custom code.
@@ -14,126 +14,103 @@
 /* Mobile Screen Resizing */
 @-webkit-viewport {
   width: device-width;
-  zoom: 1.0;
-}
+  zoom: 1; }
+
 @-moz-viewport {
   width: device-width;
-  zoom: 1.0;
-}
+  zoom: 1; }
+
 @-ms-viewport {
   width: device-width;
-  zoom: 1.0;
-}
+  zoom: 1; }
+
 @-o-viewport {
   width: device-width;
-  zoom: 1.0;
-}
+  zoom: 1; }
+
 @viewport {
   width: device-width;
-  zoom: 1.0;
-}
+  zoom: 1; }
+
 /* Remove browser defaults */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-button, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/* line 26, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, button, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* Add box sizing to everything
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-*,
-*:before,
-*:after {
+/* line 40, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /*  Set display type for HTML5 semantic elements */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+/* line 46, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
 /*  Force scrollbar display to prevent jumping on pages.
  *  Fix text resize bug on mobile devices. */
+/* line 52, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
 html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+  -ms-text-size-adjust: 100%; }
 
 /*  Display audio, canvas, and video elements as inline block elements. */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
+/* line 61, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+audio, canvas, video {
+  display: inline-block; }
 
 /*  Prevent modern browsers from displaying audio without controls. */
+/* line 66, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /*  Prevent img and video elements from spilling
  *  outside of the page on smaller screens. */
-img,
-video {
+/* line 74, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+img, video {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 /*  Prevent iframe, object, and embed elements from
  *  spilling outside of the page on smaller screens. */
-iframe,
-object,
-embed {
-  max-width: 100%;
-}
+/* line 83, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+iframe, object, embed {
+  max-width: 100%; }
 
 /* Address [hidden] styling not present in IE 8/9.
  * Hide the template element in IE, Safari, and Firefox < 22. */
-[hidden],
-template {
+/* line 90, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+[hidden], template {
   display: none;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*  Prevents IE from making scaled images look like crap */
+/* line 96, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
 img {
-  -ms-interpolation-mode: bicubic;
-}
+  -ms-interpolation-mode: bicubic; }
 
 /*  Address outline inconsistency between Chrome and other browsers. */
-a:focus,
-button:focus {
+/* line 102, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+a:focus, button:focus {
   outline: thin dotted;
   outline: 0.3125em auto -webkit-focus-ring-color;
-  outline-offset: -0.15625em;
-}
+  outline-offset: -0.15625em; }
 
 /*  Improve readability when focused and also mouse hovered in all browsers. */
-a:hover,
-a:active {
-  outline: 0;
-}
+/* line 110, /Users/anu/Documents/Sites/aussieweb/dental/css/components/reset */
+a:hover, a:active {
+  outline: 0; }
 
 /* =============================================================
 	THE GRID
@@ -141,353 +118,337 @@ a:active {
  * ============================================================= */
 /*  Mobile-first. Single-column layout by default
  *  Container sets the maximum page width. Adjust as needed. */
+/* line 8, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
 .container {
   max-width: 80em;
   width: 88%;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /*  Still mostly single-column.
  *  Option to activate grid on small screens.
  *  Two-column layout for .grid-img. */
 @media (min-width: 20em) {
+  /* line 21, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row {
     margin-left: -1.4%;
-    margin-right: -1.4%;
-  }
+    margin-right: -1.4%; }
 
-  .grid-fourth,
-  .grid-third,
-  .grid-half,
-  .grid-two-thirds,
-  .grid-three-fourths,
-  .grid-full,
-  .grid-img {
+  /* line 32, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
+  .grid-fourth, .grid-third, .grid-half, .grid-two-thirds, .grid-three-fourths, .grid-full, .grid-img {
     float: left;
     width: 100%;
     padding-left: 1.4%;
-    padding-right: 1.4%;
-  }
+    padding-right: 1.4%; }
 
   /*  Reverses order of grid for content choreography */
+  /* line 40, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .grid-flip {
-    float: right;
-  }
+    float: right; }
 
   /*  Optionally show grid for small screens */
+  /* line 45, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-xsmall .grid-fourth {
-    width: 25%;
-  }
+    width: 25%; }
 
+  /* line 49, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-xsmall .grid-third {
-    width: 33.33333333333%;
-  }
+    width: 33.33333%; }
 
-  .row-start-xsmall .grid-half,
-  .grid-img {
-    width: 50%;
-  }
+  /* line 54, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
+  .row-start-xsmall .grid-half, .grid-img {
+    width: 50%; }
 
+  /* line 58, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-xsmall .grid-two-thirds {
-    width: 66.666666666667%;
-  }
+    width: 66.66667%; }
 
+  /* line 62, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-xsmall .grid-three-fourths {
-    width: 75%;
-  }
-}
+    width: 75%; }
+ }
+
 /*  Still mostly single-column.
  *  Option to activate grid on medium screens.
  *  Three-column layout for .grid-img. */
 @media (min-width: 30em) {
   /*  Show grid for small screens */
+  /* line 75, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-small .grid-fourth {
-    width: 25%;
-  }
+    width: 25%; }
 
-  .row-start-small .grid-third,
-  .grid-img {
-    width: 33.33333333333%;
-  }
+  /* line 80, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
+  .row-start-small .grid-third, .grid-img {
+    width: 33.33333%; }
 
+  /* line 84, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-small .grid-half {
-    width: 50%;
-  }
+    width: 50%; }
 
+  /* line 88, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-small .grid-two-thirds {
-    width: 66.666666666667%;
-  }
+    width: 66.66667%; }
 
+  /* line 92, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .row-start-small .grid-three-fourths {
-    width: 75%;
-  }
-}
+    width: 75%; }
+ }
+
 /*  Full 6-column grid.
  *  Four-column layout for .grid-img. */
 @media (min-width: 50em) {
-  .grid-fourth,
-  .grid-img {
-    width: 25%;
-  }
+  /* line 104, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
+  .grid-fourth, .grid-img {
+    width: 25%; }
 
+  /* line 108, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .grid-third {
-    width: 33.33333333333%;
-  }
+    width: 33.33333%; }
 
+  /* line 112, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .grid-half {
-    width: 50%;
-  }
+    width: 50%; }
 
+  /* line 116, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .grid-two-thirds {
-    width: 66.666666666667%;
-  }
+    width: 66.66667%; }
 
+  /* line 120, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .grid-three-fourths {
-    width: 75%;
-  }
+    width: 75%; }
 
   /*  Offets let you shift grid elements to the right
-   *  but stay aligned to the grid. */
+	 *  but stay aligned to the grid. */
+  /* line 127, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .offset-fourth {
-    margin-left: 25%;
-  }
+    margin-left: 25%; }
 
+  /* line 131, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .offset-third {
-    margin-left: 33.33333333333%;
-  }
+    margin-left: 33.33333%; }
 
+  /* line 135, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .offset-half {
-    margin-left: 50%;
-  }
+    margin-left: 50%; }
 
+  /* line 139, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .offset-two-thirds {
-    margin-left: 66.666666666667%;
-  }
+    margin-left: 66.66667%; }
 
+  /* line 143, /Users/anu/Documents/Sites/aussieweb/dental/css/components/grid */
   .offset-three-fourths {
-    margin-left: 75%;
-  }
-}
+    margin-left: 75%; }
+ }
+
 /* Add clearfix */
 /* =============================================================
 	TYPOGRAPHY
 	Sets font styles for entire site.
  * ============================================================= */
+/* line 6, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 body {
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   font-weight: 300;
   line-height: 1.5;
   color: #272727;
-  background: white;
-}
+  background: #ffffff; }
 
+/* line 15, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 p {
-  margin-bottom: 1.5625em;
-}
+  margin-bottom: 1.5625em; }
 
 @media (min-width: 50em) {
+  /* line 20, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
   body {
-    line-height: 1.5625;
-  }
-}
+    line-height: 1.5625; }
+ }
+
 /*  Sizes
  *  For smaller and larger text */
+/* line 29, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 .text-small {
-  font-size: 0.9375em;
-}
+  font-size: 0.9375em; }
 
+/* line 33, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 .text-tall {
   font-size: 1.1875em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 @media (min-width: 50em) {
+  /* line 39, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
   .text-tall {
-    font-size: 1.3125em;
-  }
-}
+    font-size: 1.3125em; }
+ }
+
 /*  Colors
  *  For alternate text colors */
+/* line 48, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 .text-muted {
-  color: gray;
-}
+  color: #808080; }
 
 /*  Links
  *  Hyperlink styling */
+/* line 56, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 a {
   color: #ed4d64;
   text-decoration: none;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
+/* line 62, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 a:hover {
   color: #d81632;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
+/* line 67, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 a img {
   border: none;
-  background: none;
-}
+  background: none; }
 
 /*  Prevents border/background on linked image hover.
  *  Adds slight opacity. */
+/* line 74, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 a:hover img {
   border: none;
   background: none;
   opacity: 0.8;
-  filter: alpha(opacity=80);
-}
+  filter: alpha(opacity=80); }
 
 /*  Lists
  *  Styling for lists */
-ul,
-ol,
-dl {
+/* line 87, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+ul, ol, dl {
   margin-bottom: 1.5625em;
-  margin-left: 2em;
-}
+  margin-left: 2em; }
 
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin-bottom: 0;
-}
+/* line 95, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0; }
 
+/* line 99, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 ul {
-  list-style: disc;
-}
+  list-style: disc; }
 
+/* line 103, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 ol {
-  list-style: decimal;
-}
+  list-style: decimal; }
 
+/* line 107, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 dl {
-  margin-left: 0;
-}
+  margin-left: 0; }
 
+/* line 111, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 dt {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /*  Removes list styling.
  *  For semantic reasons, should only
  *  be used on unordered lists. */
+/* line 118, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 .list-unstyled {
   margin-left: 0;
-  list-style: none;
-}
+  list-style: none; }
 
 /*  Headings
  *  h1 through h6 styling
  *  Heading class lets you use one heading type for semantics
  *  but style it as another heading type. */
+/* line 129, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: normal;
   margin-bottom: 1em;
   padding-top: 1em;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
-h1,
-.h1 {
+/* line 138, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+h1, .h1 {
   font-size: 3em;
-  padding-top: .5em;
-}
+  padding-top: 0.5em; }
 
-h2,
-.h2 {
-  font-size: 2.75em;
-}
+/* line 144, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+h2, .h2 {
+  font-size: 2.75em; }
 
-h3,
-.h3 {
-  font-size: 2.5em;
-}
+/* line 149, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+h3, .h3 {
+  font-size: 2.5em; }
 
-h4, h5, h6,
-.h4, .h5, .h6 {
+/* line 154, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+h4, h5, h6, .h4, .h5, .h6 {
   font-size: 2em;
-  font-style: italic;
-}
+  font-style: italic; }
 
 /*  Lines, Quotes and Emphasis */
 /*  Lines */
+/* line 162, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 hr {
   margin: 2em auto;
   border: 0;
   border-top: 0.0725em solid #e5e5e5;
-  border-bottom: 0 solid white;
-}
+  border-bottom: 0 solid #ffffff; }
 
 /*  Bold */
+/* line 170, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /*  Italics */
+/* line 175, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 em {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /*  Subscript & Superscript */
-sub,
-sup {
+/* line 181, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+sub, sup {
   position: relative;
   font-size: 85%;
   font-weight: bold;
   line-height: 0;
   vertical-align: baseline;
-  margin-left: 0.25em;
-}
+  margin-left: 0.25em; }
 
+/* line 190, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
+/* line 194, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 /*  Highlighting colors */
+/* line 199, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 ::selection {
-  color: white;
-  background: #ed4d64;
-}
+  color: #ffffff;
+  background: #ed4d64; }
 
+/* line 204, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 ::-moz-selection {
-  color: white;
-  background: #ed4d64;
-}
+  color: #ffffff;
+  background: #ed4d64; }
 
 /*  Blockquotes */
+/* line 210, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 blockquote {
   border-left: 0.25em solid #e5e5e5;
   margin-bottom: 1.5625em;
   padding-left: 1.5625em;
-  padding-right: 1.5625em;
-}
+  padding-right: 1.5625em; }
 
+/* line 217, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+/* line 224, /Users/anu/Documents/Sites/aussieweb/dental/css/components/typography */
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 /* =============================================================
 	BUTTONS
 	Styling for CSS buttons.
  * ============================================================= */
+/* line 6, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
 .btn {
   display: inline-block;
   font-size: 0.9375em;
@@ -498,109 +459,91 @@ q:after {
   border: 0.0725em solid #ed4d64;
   border-radius: 0.3125em;
   margin-right: 0.3125em;
-  margin-bottom: 0.3125em;
-}
+  margin-bottom: 0.3125em; }
 
-.btn,
-.btn:hover,
-a .btn:hover,
-.btn.active {
-  color: white;
-}
+/* line 22, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+.btn, .btn:hover, a .btn:hover, .btn.active {
+  color: #ffffff; }
 
-.btn:hover,
-a .btn:hover,
-.btn.active {
+/* line 28, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+.btn:hover, a .btn:hover, .btn.active {
   background-color: #d81632;
   border-color: #d81632;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
+/* line 34, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
 .btn-secondary {
-  background-color: gray;
-  border-color: gray;
-}
+  background-color: #808080;
+  border-color: #808080; }
 
-.btn-secondary:hover,
-a .btn-secondary:hover,
-.btn-secondary.active {
+/* line 41, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+.btn-secondary:hover, a .btn-secondary:hover, .btn-secondary.active {
   background-color: #5a5a5a;
-  border-color: #5a5a5a;
-}
+  border-color: #5a5a5a; }
 
-.btn:active,
-.btn.active {
+/* line 47, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+.btn:active, .btn.active {
   box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 0.0725em 0.15625em rgba(0, 0, 0, 0.05);
-  outline: 0;
-}
+  outline: 0; }
 
-.btn.disabled,
-.btn[disabled] {
+/* line 53, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+.btn.disabled, .btn[disabled] {
   pointer-events: none;
   cursor: not-allowed;
   opacity: 0.5;
   filter: alpha(opacity=50);
-  box-shadow: none;
-}
+  box-shadow: none; }
 
+/* line 61, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
 .btn-large {
   padding: 0.6875em 0.9375em;
   font-size: 1em;
-  line-height: normal;
-}
+  line-height: normal; }
 
-.btn-block,
-input[type="submit"].btn-block,
-input[type="reset"].btn-block,
-input[type="button"].btn-block {
+/* line 70, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+.btn-block, input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
   display: block;
   width: 100%;
   margin-right: 0;
   padding-right: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
-button,
-.btn {
+/* line 79, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+button, .btn {
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   /* Override default Webkit/Firefox button styling */
   background-image: none;
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
-.btn:last-child,
-input.btn {
-  margin-right: 0;
-}
+/* line 89, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
+.btn:last-child, input.btn {
+  margin-right: 0; }
 
+/* line 93, /Users/anu/Documents/Sites/aussieweb/dental/css/components/buttons */
 .btn-large {
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 /* =============================================================
 	FORMS
 	Styling for form elements.
  * ============================================================= */
 /* @todo Integrate form styling with _config options */
-form,
-fieldset {
-  margin-bottom: 1.5625em;
-}
+/* line 7, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
+form, fieldset {
+  margin-bottom: 1.5625em; }
 
-legend,
-label {
+/* line 12, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
+legend, label {
   display: block;
   font-weight: normal;
   padding: 0;
-  margin-bottom: 0.3125em;
-}
+  margin-bottom: 0.3125em; }
 
 /* @todo Adjust form colors based on Sass variables */
-input,
-textarea,
-select {
+/* line 22, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
+input, textarea, select {
   display: block;
   width: 100%;
   font: inherit;
@@ -609,73 +552,68 @@ select {
   margin-bottom: 1.1875em;
   padding: 0.3125em;
   border: 0.0725em solid #b8b8b8;
-  border-radius: 0.0725em;
-}
+  border-radius: 0.0725em; }
 
-form button,
-form .button {
-  margin-bottom: 1.1875em;
-}
+/* line 35, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
+form button, form .button {
+  margin-bottom: 1.1875em; }
 
+/* line 39, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
 textarea {
-  height: 12em;
-}
+  height: 12em; }
 
-input[type="image"],
-input[type="checkbox"],
-input[type="radio"] {
+/* line 45, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
+input[type="image"], input[type="checkbox"], input[type="radio"] {
   display: inline-block;
   width: auto;
   height: auto;
   padding: 0;
   margin-bottom: 0.3125em;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
-input:focus,
-textarea:focus {
+/* line 55, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
+input:focus, textarea:focus {
   border-color: rgba(82, 168, 236, 0.8);
   box-shadow: inset 0 0.0725em 0.0725em rgba(0, 0, 0, 0.075), 0 0 0.5em rgba(82, 168, 236, 0.6);
   outline: 0;
-  outline: thin dotted \9;
-}
+  outline: thin dotted \9; }
 
-input[type="file"]:focus,
-input[type="checkbox"]:focus,
-select:focus {
+/* line 64, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
+input[type="file"]:focus, input[type="checkbox"]:focus, select:focus {
   outline: thin dotted;
   outline: 0.3125em auto -webkit-focus-ring-color;
-  outline-offset: -0.125em;
-}
+  outline-offset: -0.125em; }
 
 /*  Inline Inputs */
+/* line 72, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
 .input-inline {
   display: inline-block;
   width: auto;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*  Condensed Inputs */
+/* line 80, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
 .input-condensed {
   padding: 0.0725em 0.3125em;
-  font-size: 0.9375em;
-}
+  font-size: 0.9375em; }
 
 @media (min-width: 50em) {
+  /* line 87, /Users/anu/Documents/Sites/aussieweb/dental/css/components/forms */
   input, textarea, select {
-    line-height: 1.5625;
-  }
-}
+    line-height: 1.5625; }
+ }
+
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot");
-}
+  src: url('fonts/icomoon.eot'); }
+
 @font-face {
   font-family: 'icomoon';
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff");
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'), url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
+
+/* line 13, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon {
   font-family: 'icomoon';
   speak: none;
@@ -686,131 +624,125 @@ select:focus {
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale; }
 
+/* line 27, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-dental:before {
-  content: "\e608";
-}
+  content: "\e608"; }
 
+/* line 30, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-about:before {
-  content: "\e600";
-}
+  content: "\e600"; }
 
+/* line 33, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-payment:before {
-  content: "\e601";
-}
+  content: "\e601"; }
 
+/* line 36, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-phone:before {
-  content: "\e610";
-}
+  content: "\e610"; }
 
+/* line 39, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-address:before {
-  content: "\e602";
-}
+  content: "\e602"; }
 
+/* line 42, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-directions:before {
-  content: "\e603";
-}
+  content: "\e603"; }
 
+/* line 45, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-hours:before {
-  content: "\e604";
-}
+  content: "\e604"; }
 
+/* line 48, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-staff:before {
-  content: "\e605";
-}
+  content: "\e605"; }
 
+/* line 51, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-services:before {
-  content: "\e607";
-}
+  content: "\e607"; }
 
+/* line 54, /Users/anu/Documents/Sites/aussieweb/dental/css/components/icons */
 .icon-menu:before {
-  content: "\e606";
-}
+  content: "\e606"; }
 
 /* =============================================================
 	ALIGNMENT, SPACING & VISIBILITY
 	Override default alignment, spacing and visibilty.
  * ============================================================= */
 /*  Text alignment */
+/* line 8, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .text-center {
-  text-align: center;
-}
+  text-align: center; }
 
+/* line 12, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .text-right {
-  text-align: right;
-}
+  text-align: right; }
 
+/* line 16, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .text-left {
-  text-align: left;
-}
+  text-align: left; }
 
 /*  Floats */
+/* line 23, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .float-left {
-  float: left;
-}
+  float: left; }
 
+/* line 27, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .float-center {
   float: none;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
+/* line 33, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .float-right {
-  float: right;
-}
+  float: right; }
 
 /*  Spacing */
+/* line 40, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .no-space {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
+/* line 45, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .no-space-bottom {
   margin-bottom: 0;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
+/* line 50, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .no-space-top {
   margin-top: 0;
-  padding-top: 0;
-}
+  padding-top: 0; }
 
+/* line 55, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .space-bottom {
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
+/* line 59, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .space-bottom-small {
   margin-bottom: 0.5em;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
+/* line 64, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .space-top {
-  padding-top: 0.8125em;
-}
+  padding-top: 0.8125em; }
 
 /*  Screen Reader Text */
+/* line 71, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
 .screen-reader {
   position: absolute;
   top: -9999em;
-  left: -9999em;
-}
+  left: -9999em; }
 
 /*  Clearfix */
-.group:before, .container:before,
-.row:before,
-.group:after,
-.container:after,
-.row:after {
+/* line 80, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
+.group:before, .container:before, .row:before, .group:after, .container:after, .row:after {
   display: table;
-  content: "";
-}
+  content: ""; }
 
-.group:after, .container:after,
-.row:after {
-  clear: both;
-}
+/* line 85, /Users/anu/Documents/Sites/aussieweb/dental/css/components/overrides */
+.group:after, .container:after, .row:after {
+  clear: both; }
 
 /* =============================================================
 	PRINT STYLES
@@ -819,230 +751,232 @@ select:focus {
  * ============================================================= */
 @media print {
   /*  Universal selector.
-   *  Reset all content to transparent background,
-   *  black color, and remove box and text shadows. */
+	 *  Reset all content to transparent background,
+	 *  black color, and remove box and text shadows. */
+  /* line 12, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   * {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    text-shadow: none !important; }
 
   /*  Specifies page margin */
   @page {
-    margin: 0.5cm;
-  }
+    margin: 0.5cm; }
+
   /*  Underline all links */
+  /* line 25, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   a, a:visited {
-    text-decoration: underline;
-  }
+    text-decoration: underline; }
 
   /*  Show URL after links */
+  /* line 30, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
 
   /*  Don't show URL for internal links */
+  /* line 35, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   a[href^="#"]:after {
-    content: "";
-  }
+    content: ""; }
 
   /*  Specifies the minimum number of lines to print at the top and bottom of a page. */
+  /* line 40, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   p, h1, h2, h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   /*  Avoid inserting a page break after headers */
+  /* line 46, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   h1, h2, h3 {
-    page-break-after: avoid;
-  }
+    page-break-after: avoid; }
 
   /*  Change border color on blockquotes and preformatted text.
-   *  Avoid page breaks inside the content */
+	 *  Avoid page breaks inside the content */
+  /* line 52, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   pre, blockquote {
     border-color: #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   /*  Displayed as a table header row group */
+  /* line 58, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   thead {
-    display: table-header-group;
-  }
+    display: table-header-group; }
 
   /*  Avoid inserting a page break inside table rows and images */
+  /* line 63, /Users/anu/Documents/Sites/aussieweb/dental/css/components/print */
   tr, img {
-    page-break-inside: avoid;
-  }
-}
+    page-break-inside: avoid; }
+ }
+
 /*  Client specifics */
+/* line 67, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 img, .btn {
   box-shadow: 0 0.05em 0.225em rgba(0, 0, 0, 0.2);
-  border-radius: 0.25em;
-}
+  border-radius: 0.25em; }
 
+/* line 72, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 header {
-  margin: 1em 0 2em 0;
-}
+  margin: 1em 0 2em 0; }
 
+/* line 76, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1, h2, h3, h4, nav, .anniversary {
   font-family: "Shadows Into Light", cursive;
-  text-shadow: .5px 0px 0px #999;
-}
+  text-shadow: 0.5px 0px 0px #999; }
 
+/* line 81, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1, h2, h3, a, nav {
-  color: #ed4d64;
-}
+  color: #ed4d64; }
 
+/* line 85, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1 span, h2 span, h3 span, h4 span {
-  font-size: .75em;
-  color: #666666;
-}
+  font-size: 0.75em;
+  color: #666666; }
 
+/* line 90, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1.logo {
   padding: 0;
-  margin: .5em 0;
-  font-size: 2em;
-}
+  margin: 0.5em 0;
+  font-size: 2em; }
 
+/* line 96, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1.logo span {
-  color: gray;
+  color: #808080;
   display: block;
-  margin-left: 1.5em;
-}
+  margin-left: 1.5em; }
 
+/* line 102, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1.logo a {
-  color: #01b0f0;
-}
+  color: #01b0f0; }
 
+/* line 106, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1.logo a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
+/* line 110, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 h1 .icon-dental {
-  color: gray;
-  vertical-align: middle;
-}
+  color: #808080;
+  vertical-align: middle; }
 
+/* line 115, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 nav .nav {
   font-size: 1.3em;
   line-height: 3;
-  margin-top: 1em;
-}
+  margin-top: 1em; }
 
+/* line 121, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .nav {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
+/* line 128, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .nav li {
   display: inline-block;
-  margin-right: .2em;
-}
+  margin-right: 0.2em; }
 
+/* line 134, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .nav a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
+/* line 138, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 article {
   border-top: 1px solid #fff1e5;
-  border-bottom: 1px solid #fffaf6;
-}
+  border-bottom: 1px solid #fffaf6; }
 
+/* line 143, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 article#intro {
-  border-top: none;
-}
+  border-top: none; }
 
+/* line 147, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 #intro h2 {
-  padding-top: 0;
-}
+  padding-top: 0; }
 
+/* line 151, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 footer {
-  border-top: 1px solid #ffe7d4;
-}
+  border-top: 1px solid #ffe7d4; }
 
+/* line 156, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .badge {
-  color: #01b0f0;
-}
+  color: #01b0f0; }
 
+/* line 160, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 small {
-  font-size: .75em;
-}
+  font-size: 0.75em; }
 
+/* line 164, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .muted {
-  color: gray;
-}
+  color: #808080; }
 
+/* line 169, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .btn-primary, .btn-secondary {
-  min-width: 260px;
-}
+  min-width: 260px; }
 
+/* line 172, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 table {
   width: 100%;
   background-color: #fffaf6;
-  color: #333;
-}
+  color: #333; }
 
+/* line 173, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 table th {
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
   font-weight: bold;
   text-align: left;
-  color: #d8756c;
-}
+  color: #d8756c; }
 
+/* line 174, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 table td {
-  padding: .125em .5em;
-}
+  padding: 0.125em 0.5em; }
 
-table th,
-table td {
-  max-width: 3em;
-}
+/* line 176, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
+table th, table td {
+  max-width: 3em; }
 
+/* line 177, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 table tr.odd {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 @media (min-width: 50em) {
+  /* line 181, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
   h1.logo {
-    font-size: 3em;
-  }
+    font-size: 3em; }
 
+  /* line 184, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
   nav .nav {
     text-align: right;
     font-size: 1.5em;
-    line-height: 3;
-  }
+    line-height: 3; }
 
+  /* line 189, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
   .nav li {
-    margin-right: .5em;
-  }
-}
-@media (min-width: 60em) {
-  nav .nav {
-    font-size: 1.5em;
-  }
-}
-/* Blog styles */
-.active {
-  text-decoration: underline;
-}
+    margin-right: 0.5em; }
+ }
 
+@media (min-width: 60em) {
+  /* line 195, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
+  nav .nav {
+    font-size: 1.5em; }
+ }
+
+/* Blog styles */
+/* line 202, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
+.active {
+  text-decoration: underline; }
+
+/* line 206, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .btn-readmore {
   background-color: #ffffff;
   border-color: #eee;
-  color: gray;
-  font-weight: 300;
-}
+  color: #808080;
+  font-weight: 300; }
 
+/* line 213, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
 .btn-readmore {
-  min-width: auto;
-}
+  min-width: auto; }
 
-.btn-readmore:hover,
-a .btn-readmore:hover,
-.btn-readmore.active {
+/* line 219, /Users/anu/Documents/Sites/aussieweb/dental/css/style.scss */
+.btn-readmore:hover, a .btn-readmore:hover, .btn-readmore.active {
   background-color: #e5e5e5;
-  border-color: #bfbfbf;
-}
+  border-color: #bfbfbf; }
+
+/*# sourceMappingURL=style.css.map */
